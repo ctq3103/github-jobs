@@ -73,11 +73,7 @@ export function FilterFormContainer() {
 				</FilterForm.CheckboxGroup>
 			</FilterForm>
 
-			<FilterForm.Modal
-				className="hide-on-tablet hide-on-laptop"
-				open={isOpen}
-				onClose={() => setIsOpen(false)}
-			>
+			<FilterForm.Modal open={isOpen} onClose={() => setIsOpen(false)}>
 				<FilterForm.FilterGroup>
 					<FilterForm.FilterInput
 						defaultValue={params.location}
